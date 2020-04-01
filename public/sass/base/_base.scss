@@ -1,0 +1,140 @@
+/*---------------------------------------------------------------------------------------------------------------------------------
+*
+* 		Base structure
+*
+* ---------------------------------------------------------------------------------------------------------------------------------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: $link-text;
+  font-family: $font-1;
+}
+
+p {
+  font-size: $para-text;
+}
+
+.body__wrap {
+  position: relative;
+}
+
+/* #Social Media color
+----------------------------------------------------------------------------------------------------------------------------------- */
+$twitter: #00aced;
+$facebook: #3b5998;
+$google-plus: #dd4b39;
+$pinterest: #cb2027;
+$linked-in: #007bb6;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5b9a68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #eb4823;
+$yahoo: #7b0099;
+$blogger: #fb8f3d;
+$sound-cloud: #ff3a00;
+$whats-app: #34af23;
+
+/* #Mixin - headings
+-----------------------------------------------------------------------------------------------------------------------------------*/
+@mixin heading-one {
+  color: $heading-color-1;
+  font: {
+    family: $font-2;
+    size: $heading-1;
+    weight: 600;
+  }
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0 $bg-aside;
+
+  &:after {
+    background-color: $btn-bg;
+    content: "";
+    display: block;
+    height: 10px;
+    margin: 20px auto 0;
+    width: 20px;
+  }
+}
+
+@mixin heading-2 {
+  color: $heading-color-1;
+  line-height: 28px;
+  letter-spacing: 1.7px;
+  font: {
+    family: $font-2;
+    size: 20px;
+    weight: 600;
+  }
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin tagline-1 {
+  color: $heading-color-1;
+  text-align: center;
+  font: {
+    family: $font-4;
+    size: 36px;
+    weight: 400;
+  }
+  text-shadow: 1px 1px 0 $bg-aside;
+}
+
+@mixin text-1 {
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  font: {
+    family: $font-3;
+    size: 15px;
+    weight: 500;
+  }
+  color: $color-6;
+}
+
+@mixin text-2 {
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  font: {
+    family: $font-3;
+    size: 17px;
+    weight: 500;
+  }
+  color: $color-6;
+}
+
+/* #Mixin - transitions
+-----------------------------------------------------------------------------------------------------------------------------------*/
+@mixin transition($transition: all 0.9s ease-in) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin border {
+  border: 1px solid $border-color;
+  padding: 2px;
+  text-align: center;
+}

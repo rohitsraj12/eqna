@@ -1,0 +1,68 @@
+:root {
+  /* colors */
+  --base-light-color: #ffffff;
+  --base-dark-color: #222;
+  --btn-color: #abc502;
+  --btn-border-color: #abc502;
+  --border-color: #e7e7e7;
+  --text-color: rgb(88, 88, 88);
+  --text-header-color: #333333;
+  --nav-bg-color: rgba(17, 17, 17, 0.932);
+  --nav-text-color: #ffffff;
+
+  /* font */
+  --nav-font: "Baloo Thambi 2", cursive;
+  --header-font: "Open sans";
+  --para-font: "Open sans";
+  --link-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* text size */
+  --nav-text: 1rem;
+  --header-text: 2rem;
+  --para-text: 1.2rem;
+
+  /* transition */
+  --transition: all 250ms ease-in-out;
+}
+@media (min-width: 1025px) {
+  .wrap__section {
+    width: 80%;
+  }
+
+  .body__header header {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .nav__list + li {
+    margin-left: 3em;
+  }
+
+  .nav__list {
+    border-bottom: 1px solid transparent;
+    transition: var(--transition);
+  }
+
+  .nav__list:hover {
+    border-bottom: 1px solid var(--btn-color);
+  }
+
+  .nav__link {
+    transition: var(--transition);
+  }
+
+  .nav__list:hover .nav__link {
+    color: var(--btn-color);
+  }
+
+  .active {
+    border-bottom: 1px solid var(--btn-color);
+  }
+
+  .active > a {
+    color: var(--btn-color);
+  }
+}
