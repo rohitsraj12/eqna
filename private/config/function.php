@@ -3,7 +3,7 @@
 // base url
 
 function base_url(){
-    echo "http://localhost/project/iqna/public/";
+    echo "https://rohitsraj12.github.io/eqna/";
 }
 
 
