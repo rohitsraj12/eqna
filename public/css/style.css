@@ -1,5 +1,4 @@
-/*
-* ---------------------------------------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------------------------------------------------
 * 	
 *	Web URL	      : http://eqnabeautysalon.com
 *	Year		      : 2020 - 2020
@@ -9,206 +8,276 @@
 *	Style		      : scss --> CSS-3
 *
 * ---------------------------------------------------------------------------------------------------------------------------------*/
-/* Utility */
-/*---------------------------------------------------------------------------------------------------------------------------------
-*
-* 		Site Settings.
-*
-* ---------------------------------------------------------------------------------------------------------------------------------*/
-/*		Font variables
----------------------------------------------------------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&display=swap");
-/*		text sizing
----------------------------------------------------------------------------------------------------------------------------------*/
-/*		Colors
----------------------------------------------------------------------------------------------------------------------------------*/
-/*		Text 	*/
-/*		Border		*/
-/*	background 	*/
-/* 	repeat 	*/
-/* Base */
-/*---------------------------------------------------------------------------------------------------------------------------------
-*
-* 		Base structure
-*
-* ---------------------------------------------------------------------------------------------------------------------------------*/
+/* colors */
+/* font */
+/* text size */
+/*  Width */
+/* Social Media color */
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  80% {
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(8rem); }
+  50% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  list-style: none;
+  text-decoration: inherit;
+  list-style: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.7;
   text-decoration: none;
+  list-style: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:root {
-  /* colors */
-  --base-light-color: #ffffff;
-  --base-dark-color: #222;
-  --btn-color: #abc502;
-  --btn-border-color: #abc502;
-  --border-color: #e7e7e7;
-  --text-color: rgb(88, 88, 88);
-  --text-header-color: #333333;
-  --nav-bg-color: rgba(17, 17, 17, 0.932);
-  --nav-text-color: #ffffff;
-
-  /* font */
-  --nav-font: "Baloo Thambi 2", cursive;
-  --header-font: "Open sans";
-  --para-font: "Open sans";
-  --link-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  /* text size */
-  --nav-text: 1rem;
-  --header-text: 2rem;
-  --para-text: 1.2rem;
-
-  /* transition */
-  --transition: all 250ms ease-in-out;
-}
+  box-sizing: border-box; }
 
 p {
-  font-family: var(--para-font);
-  font-size: 15px;
-  color: var(--text-color);
-}
+  font-family: "Open sans", sans-serif;
+  font-size: 1.5rem;
+  color: #585858; }
 
 .body__wrap {
-  position: relative;
-}
+  position: relative; }
 
-.wrap__section {
-  margin: 0 auto;
-}
+.body__container {
+  margin: 10rem 0; }
 
-/* #Social Media color
------------------------------------------------------------------------------------------------------------------------------------ */
-/* #Mixin - headings
------------------------------------------------------------------------------------------------------------------------------------*/
-/* #Mixin - transitions
------------------------------------------------------------------------------------------------------------------------------------*/
-/* Fonts */
-/* Layout*/
+.nav__link {
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.heading-primary {
+  margin-bottom: 5rem;
+  font-family: "Baloo Thambi 2", cursive, sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1); }
+  .heading-primary--main {
+    color: #222; }
+  .heading-primary--sub {
+    color: #abc502; }
+.heading-secondary {
+  margin-bottom: 1.5rem;
+  font-family: "Baloo Thambi 2", cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1); }
+.heading-tertiary {
+  margin-bottom: 1.5rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1); }
+
+.sub-heading-primary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #abc502; }
+
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.wrap__content {
+  width: 80%;
+  margin: 0 auto; }
+
 /*---------------------------------------------------------------------------------------------------------------------------------
 *
-* 		Header(general) section
+* 		Button section
 *
 * ---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------
+*
+* 		Divider section
+*
+* ---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------
+*
+* 		Forms section
+*
+* ---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------
+*
+* 		Other design section
+*
+* ---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------
+*
+* 		Table section
+*
+* ---------------------------------------------------------------------------------------------------------------------------------*/
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    height: 50px;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem ); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem ); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem ); }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .flex__block-2 {
+    width: 46%; }
+  .flex__block-3 {
+    width: 30%; }
+
 .body__header {
   width: 100%;
   position: absolute;
-  top: 0;
-}
+  top: 0; }
 
-.header__toggle {
-}
+.header__nav-main {
+  display: flex; }
 
 .body__header header {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.header__brand {
-}
+  align-items: center; }
 
 /* for javascript action
   -   add this class when user start scrolling and stick on top
 */
 .on-scroll__body-header {
-  background-color: var(--nav-bg-color);
+  background-color: rgba(17, 17, 17, 0.932);
   border-bottom: 1px solid #222;
-  position: fixed;
-}
+  position: fixed; }
 
 .off-scroll__header {
-  margin: 20px auto;
-}
+  margin: 20px auto; }
+
+@media (min-width: 1025px) {
+  .wrap__section {
+    width: 80%; }
+
+  .body__header header {
+    flex-direction: row; }
+
+  .header__main-nav {
+    flex-direction: row; }
+
+  .nav__list {
+    border-bottom: 1px solid transparent; }
+    .nav__list:hover {
+      border-bottom: 1px solid #abc502; }
+
+  .nav__list + li {
+    margin-left: 3em; }
+
+  .nav__list:hover .nav__link {
+    color: #abc502; }
+
+  .active {
+    border-bottom: 1px solid #abc502; }
+
+  .active > a {
+    color: #abc502; } }
 /*---------------------------------------------------------------------------------------------------------------------------------
 *
 * 		Navigation(general) section
 *
 * ---------------------------------------------------------------------------------------------------------------------------------*/
-nav {
-}
-
-nav ul {
-  display: flex;
-}
-
-.nav__link {
-  font-family: var(--nav-font);
-  font-size: var(--nav-text);
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--nav-text-color);
-}
-/*********************************************************************************************
-*
-* 		Main(general) section
-*
-**********************************************************************************************/
-/* -------------------------------------------------------------------------------------------
-*
-*		base design
-*
-* -------------------------------------------------------------------------------------------*/
-/*  Testimonial section
---------------------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------------
-*
-*		banner section
-*
-* -------------------------------------------------------------------------------------------*/
 .body__banner {
-  /* display: none; */
-}
+  /* display: none; */ }
 
 .banner__img img {
   width: 100%;
-  height: 100vh;
-}
+  height: 90vh; }
 
-/*  -------------------------------------------------------------------------------------------
-*
-*		Home page
-*
-* -------------------------------------------------------------------------------------------*/
-/*  -------------------------------------------------------------------------------------------
-*
-*		solution page
-*
-* -------------------------------------------------------------------------------------------*/
-/*  Front end solution page
---------------------------------------------------------------------------------------------------- */
-/*  Responsive solution page
---------------------------------------------------------------------------------------------------- */
-/*  Web design solution page
---------------------------------------------------------------------------------------------------- */
-/*  Media design solution page
---------------------------------------------------------------------------------------------------- */
-/*  -------------------------------------------------------------------------------------------
-*
-*		about page
-*
-* -------------------------------------------------------------------------------------------*/
-/*  -------------------------------------------------------------------------------------------
-*
-*		work page
-*
-* -------------------------------------------------------------------------------------------*/
-/* Media-Layout*/
-/*Large screan 1225px and above */
-/*medium screan 769px to 1224px */
-/* small screens 768px and below */
-/*Large screan 1225px and above */
-/*medium screan 769px to 1224px */
-/* small screens 768px and below */
-/* Moduls */
+.section__service {
+  padding: 6rem 0;
+  background-color: #f7f7f7; }
+  .section__service-block {
+    margin-bottom: 3.5rem; }
+.section__certification {
+  padding: 6rem 0; }
+  .section__certification .certification__header {
+    margin-bottom: 3rem; }
+  .section__certification-block {
+    margin-bottom: 3.5rem; }
+
+.service__header {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
