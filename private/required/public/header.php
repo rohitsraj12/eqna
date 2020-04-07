@@ -45,7 +45,7 @@ $project_name = "eqna";
                               <!-- end header social -->
                         
                               <nav class="header__nav">
-                                    <ul>
+                                    <ul class="header__nav-main">
                                           <li class="active nav__list"><a href="<?=base_url()?>index.php" class="nav__link">home</a></li>
                                           <li class="nav__list"><a href="<?=base_url()?>about_us.php" class="nav__link">about</a></li>
                                           <li class="nav__list"><a href="<?=base_url()?>service.php" class="nav__link">services</a></li>
