@@ -1,0 +1,14 @@
+{
+  "name": "eqna",
+  "version": "1.0.0",
+  "description": "beauty salon website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css"
+  },
+  "author": "Rohit",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
