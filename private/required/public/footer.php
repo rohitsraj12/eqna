@@ -1,5 +1,9 @@
 
-            <div class="body__footer"></div>
+            <div class="body__footer">
+              <footer>
+
+              </footer>
+            </div>
             <!-- end body footer -->
       </div>
       <!-- script -->
