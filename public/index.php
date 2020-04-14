@@ -15,7 +15,7 @@
       </div>
       <!-- end body banner -->
       <div class="body__container">
-            <header class="page__home">
+            <div class="page__home">
                   <main>
                         <section class="section__service">
                               <div class="section__heading">
@@ -24,9 +24,11 @@
                                           <span class="heading-primary--main">services</span>
                                     </header>
                               </div>
-                              <header class="section__body flex wrap__content">
+                              <div class="section__body flex wrap__content">
                                     <article class="flex__block-3 section__service-block">
-                                          <div class="service__image"></div>
+                                          <div class="service__image">
+                                                <?php include("svg/haircut.php");?>
+                                          </div>
                                           <header class="service__header">
                                                 <h2 class="heading-secondary">
                                                 cutting service
@@ -34,12 +36,15 @@
                                           </header>
                                           <div class="service__body">
                                                 <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut ad velit! Vero, animi mollitia?
+                                                all type of cut,laser ,fedar, steps etc
                                                 </p>
                                           </div>
                                     </article>
                                     <article class="flex__block-3 section__service-block">
-                                          <div class="service__image"></div>
+                                          <div class="service__image">
+                                          <?php include("svg/makeup.php");?>
+                                                
+                                          </div>
                                           <header class="service__header">
                                                 <h2 class="heading-secondary">
                                                       beauty service
@@ -47,12 +52,15 @@
                                           </header>
                                           <div class="service__body">
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem necessitatibus explicabo maxime cupiditate fuga, veniam assumenda doloribus ut nihil incidunt.
+                                                beauty service…..facial ,anti aging treatment ,open pores treatment ,rinkles  treatment, all type of facil etc,
                                                 </p>
                                           </div>
                                     </article>
                                     <article class="flex__block-3 section__service-block">
-                                          <div class="service__image"></div>
+                                          <div class="service__image">
+                                          
+                                          <?php include("svg/coloring.php");?>
+                                          </div>
                                           <header class="service__header">
                                                 <h2 class="heading-secondary">
                                                       coloring service
@@ -65,7 +73,9 @@
                                           </div>
                                     </article>
                                     <article class="flex__block-3 section__service-block">
-                                          <div class="service__image"></div>
+                                          <div class="service__image">
+                                          <?php include("svg/makeup.php");?>
+                                          </div>
                                           <header class="service__header">
                                                 <h2 class="heading-secondary">
                                                       make up service
@@ -78,7 +88,10 @@
                                           </div>
                                     </article>
                                     <article class="flex__block-3 section__service-block">
-                                          <div class="service__image"></div>
+                                          <div class="service__image">
+                                          <?php include("svg/haircut.php");?>
+                                                
+                                          </div>
                                           <header class="service__header">
                                                 <h2 class="heading-secondary">
                                                 package deals
@@ -91,7 +104,9 @@
                                           </div>
                                     </article>
                                     <article class="flex__block-3 section__service-block">
-                                          <div class="service__image"></div>
+                                          <div class="service__image">
+                                          <?php include("svg/haircut.php");?>
+                                          </div>
                                           <header class="service__header">
                                                 <h2 class="heading-secondary">
                                                 other services
@@ -114,14 +129,14 @@
                                           <span class="heading-primary--main">certification</span>
                                     </header>
                               </div>
-                              <div class="section__body flex wrap__content">
-                                    <div class="flex__block-2">
+                              <div class="section__body row wrap__content">
+                                    <div class="col-1-of-3">
                                           <header class="certification__header">
                                                 <h2 class="heading-tertiary">
                                                 ABOUT CERTIFICATION PROGRAMS 
                                                 </h2>
                                                 <sub class="sub-heading-primary">
-                                                WELCOME TO THE IQNA BEAUTY SALON
+                                                WELCOME TO THE EQNA BEAUTY SALON
                                                 </sub>
                                           </header>
                                           <div class="certificagtion__body">
@@ -130,13 +145,21 @@
                                                 </p>
                                           </div>
                                     </div>
-                                    <div class="flex__block-2">
+                                    <div class="col-2-of-3">
                                           <div class="flex">
                                           <article class="flex__block-2 section__certification-block">
+                                                <div class="certification__image">
+                                                      <figure>
+                                                            <img class="" src="img/styles/s1.jpg" alt="" />
+                                                      </figure>
+                                                </div>
                                                 <header class="certification__header">
                                                       <h2 class="heading-secondary">
-                                                            coloring certification
+                                                            Basic Makeup traing 
                                                       </h2>
+                                                      <sub>
+                                                            10 - days
+                                                      </sub>
                                                 </header>
                                                 <div class="certification__body">
                                                       <p>
@@ -145,11 +168,18 @@
                                                 </div>
                                           </article>
                                           <article class="flex__block-2 section__certification-block">
-                                                <div class="certification__image"></div>
+                                                <div class="certification__image">
+                                                      <figure>
+                                                            <img class="" src="img/styles/s2.jpg" alt="" />
+                                                      </figure>
+                                                </div>
                                                 <header class="certification__header">
                                                       <h2 class="heading-secondary">
-                                                            make up certification
+                                                            Advance Makeup traing
                                                       </h2>
+                                                      <sub>
+                                                            25 - days
+                                                      </sub>
                                                 </header>
                                                 <div class="certification__body">
                                                       <p>
@@ -158,11 +188,18 @@
                                                 </div>
                                           </article>
                                           <article class="flex__block-2 section__certification-block">
-                                                <div class="certification__image"></div>
+                                                <div class="certification__image">
+                                                      <figure>
+                                                            <img class="" src="img/styles/s3.jpg" alt="" />
+                                                      </figure>
+                                                </div>
                                                 <header class="certification__header">
                                                       <h2 class="heading-secondary">
-                                                      package deals
+                                                            Basic training
                                                       </h2>
+                                                      <sub>
+                                                            30 - days
+                                                      </sub>
                                                 </header>
                                                 <div class="certification__body">
                                                       <p>
@@ -171,11 +208,18 @@
                                                 </div>
                                           </article>
                                           <article class="flex__block-2 section__certification-block">
-                                                <div class="certification__image"></div>
+                                                <div class="certification__image">
+                                                      <figure>
+                                                            <img class="" src="img/styles/s4.jpg" alt="" />
+                                                      </figure>
+                                                </div>
                                                 <header class="certification__header">
                                                       <h2 class="heading-secondary">
-                                                      other certifications
+                                                            Advance training   
                                                       </h2>
+                                                      <sub>
+                                                            50 - days 
+                                                      </sub>
                                                 </header>
                                                 <div class="certification__body">
                                                       <p>
@@ -189,12 +233,15 @@
                         </section>
                         <!-- end section certification -->
                   </main>
+
+                  
+
             </div>
             <!-- end home page -->
       </div>
       <!-- end body container -->
 
-      
+
         
     <!-- <div class="grid-text">
       <div class="row">
