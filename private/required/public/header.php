@@ -1,6 +1,5 @@
 <?php
-
-$project_name = "eqna";
+      $project_name = "eqna";
 ?>
 
 <!DOCTYPE html>
@@ -22,10 +21,16 @@ $project_name = "eqna";
 
 <body>
       <div class="body__wrap">
-            <div class="body__header">
+            <div class="body__header" id="section__header">
                   
                   <div class="header__toggle" id="header__toggle">
-                        <span id="hamberger" class="hamburger"></span>
+                              <svg viewBox="0 0 100 80" width="40" height="40">
+                                    <rect width="100" height="10"></rect>
+                                    <rect y="30" width="100" height="10"></rect>
+                                    <rect y="60" width="100" height="10"></rect>
+                              </svg>
+                       
+                        <span id="hamberger" class="hamburger"> </span>
                   </div>
                   
                   <header class="wrap__section off-scroll__header">
